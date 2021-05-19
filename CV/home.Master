@@ -1,0 +1,93 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="home.Master.vb" Inherits="CV.Site1" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Curriculum | Joel</title>
+    <link rel="stylesheet" href="css/home.Master.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="padding-top: 190px; background: #E8E8E8;">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top mb-5 " id="nav">
+        <div class="container">
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mr-5 " id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link mr-3" href="#home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mr-3" href="#sobremi">Sobre mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mr-0" href="#estudios">Estudios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mr-0" href="#conocimientos">Conocimientos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mr-0" href="#experiencia">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mr-0" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <br />  <br />  <br />
+
+    <div class="contact" id="contact">
+        <div class="contact-links" id="contacto">
+            <h2 class="text-center mb-5" id="contact-h2">Contacto</h2>
+            <div style="text-align:center; align-content:center">
+                <a href="https://github.com/YantornoJoel?tab=repositories" class="btn link-me mr-5 mt-3"
+                    target="_blank" >
+                    <img src="css/github-brands.svg" style="max-width: 20px; max-height: 20px; background: white;" />
+                    GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/joel-yantorno-72550218a/" class="btn link-me mr-5 mt-3"
+                    target="_blank" >
+                    <img src="css/linkedin-brands.svg" style="max-width: 20px; max-height: 20px; background: white;" />
+                    LinkedIn
+                </a>
+                <a href="https://codepen.io/yantornojoel/" class="btn link-me mr-5 mt-3"
+                    target="_blank" >
+                    <img src="css/codepen-brands.svg" style="max-width: 20px; max-height: 20px; background: white;" />
+                    Codepen
+                </a>
+                <a href="#" class="btn link-me mr-5 mt-3" id="contact-email"
+                    target="_blank" >
+                    <img src="css/at-solid.svg" style="max-width: 20px; max-height: 20px; background: white;" />
+                    yantornojoel@gmail.com
+                </a>
+            </div>
+        </div>
+    </div>
+    <p id="contact-p">&copy 2021 Joel Yantorno | Programacion V </p>
+
+</body>
+ 
+<script src="js/bootstrap.min.js"></script>
+</html>
